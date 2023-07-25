@@ -35,11 +35,16 @@ This part of the code is adapted from the [Equivariant-SSL repo](https://github.
 ### Fine-tuning
 Equivariant and baseline models:
 ```
-python eval_ensem.py --data <path-to-data> --combine_sep_ckpts --eval-mode finetune --dataset imagenet --pretrained <path-to-pretrained-ckpt> --checkpoint-dir <checkpoint-dir> --log-dir <tensorboard-log-dir> --exp-id <name-of-exp>  
+python eval_ensem.py --data <path-to-data> --eval-mode finetune --dataset imagenet --pretrained <path-to-pretrained-ckpt> --checkpoint-dir <checkpoint-dir> --log-dir <tensorboard-log-dir> --exp-id <name-of-exp>  
 ```
 Invariant models:
 ```
-python eval_ensem.py --data <path-to-data> --combine_sep_ckpts --eval-mode finetune --dataset imagenet --pretrained <path-to-pretrained-ckpt> --checkpoint-dir <checkpoint-dir> --log-dir <tensorboard-log-dir> --exp-id <name-of-exp> --lr-classifier 0.004 --lr-backbone 0.004  
+python eval_ensem.py --data <path-to-data> --eval-mode finetune --dataset imagenet --pretrained <path-to-pretrained-ckpt> --checkpoint-dir <checkpoint-dir> --log-dir <tensorboard-log-dir> --exp-id <name-of-exp> --lr-classifier 0.004 --lr-backbone 0.004  
+```
+### Ensemble evaluation
+Example of MSE with 2-member equivariant + invariant models:
+```
+python eval_ensem.py --data <path-to-data> --eval-mode freeze --dataset imagenet --pretrained <paths-to-finetuned-ckpts-separated-by-space> 
 ```
 
 ## Community
