@@ -1,7 +1,7 @@
 Multi-Symmetry Ensembles
 ---------------------------------------------------------------
 <p align="center">
-  <img width="500" alt="image" src="https://github.com/clott3/multi-sym-ensem/assets/55004415/eac92395-b90e-48b7-b162-37f6c0c303c9">
+  <img width="500" alt="image" src="https://github.com/clott3/multi-sym-ensem/assets/55004415/25c944c9-2861-4cc6-ab72-0ec7808e58c4">
 </p>
 
 
